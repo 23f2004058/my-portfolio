@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 50px;
+            max-width: 800px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 0.8s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        .subtitle {
+            color: #666;
+            text-align: center;
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+        
+        .section {
+            margin: 30px 0;
+        }
+        
+        .section h2 {
+            color: #764ba2;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .work-item {
+            background: #f8f9fa;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .work-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .work-item h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .work-item p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .contact {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        
+        .contact h2 {
+            color: white;
+            border: none;
+            margin-bottom: 20px;
+        }
+        
+        .email {
+            font-size: 1.3em;
+            font-weight: bold;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .skill-tag {
+            background: #667eea;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Portfolio</h1>
+        <p class="subtitle">Showcasing My Work & Projects</p>
+        
+        <div class="section">
+            <h2>About Me</h2>
+            <p>Welcome to my portfolio! I am a student at IIT Madras pursuing Data Science. This page showcases my work, projects, and accomplishments.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Recent Work</h2>
+            
+            <div class="work-item">
+                <h3>Project LeIvDlXpl-oQ Deployment Documentation</h3>
+                <p>Created comprehensive architecture documentation for a data product deployment pipeline, including edge cache, API tier, and background workers. Documented system flows, deployment procedures, and compliance requirements.</p>
+            </div>
+            
+            <div class="work-item">
+                <h3>Image Compression Optimization</h3>
+                <p>Successfully compressed a 7KB image down to 276 bytes (96% reduction) using lossless compression techniques while maintaining pixel-perfect quality. Demonstrated understanding of image optimization for web performance.</p>
+            </div>
+            
+            <div class="work-item">
+                <h3>Technical Writing & Documentation</h3>
+                <p>Proficient in creating technical documentation using Markdown, including diagrams (Mermaid), tables, task lists, and proper citation formats. Experienced with GitHub-flavored Markdown and industry-standard documentation practices.</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Skills</h2>
+            <div class="skills">
+                <span class="skill-tag">Technical Documentation</span>
+                <span class="skill-tag">Markdown</span>
+                <span class="skill-tag">Image Optimization</span>
+                <span class="skill-tag">GitHub</span>
+                <span class="skill-tag">Data Science</span>
+                <span class="skill-tag">Problem Solving</span>
+            </div>
+        </div>
+        
+        <div class="section contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out for collaboration or opportunities:</p>
+            <div class="email">
+                <!--email_off-->23f2004058@ds.study.iitm.ac.in<!--/email_off-->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
